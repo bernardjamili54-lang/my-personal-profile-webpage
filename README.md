@@ -219,7 +219,7 @@ Hi! My name is Kurt Ian Tirol. I am a Grade 11 ICT student who is passionate abo
 
     <p>
 
-        <i>"Do your best, and God will do the rest."</i>
+        <i>"Be curious, not judgmental."</i>
 
     </p>
 
