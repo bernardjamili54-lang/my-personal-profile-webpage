@@ -28,8 +28,6 @@
 
     alt="<img src="bernard.jpg" width=300 alt="Teenage boy sitting in the back seat of a car wearing a yellow T-shirt, holding the interior grab handle above his head; sunlight falls across his face and chest. Outside the car window are trees and a person standing near another vehicle. There is faint printed text on the T-shirt that is not legible. The mood is calm and contemplative." />"
 
-    width="250">
-
     <p>
 
         This image represents me as a learner and future programmer.
