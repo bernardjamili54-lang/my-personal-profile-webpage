@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Kurt Ian I. Tirol - Multimedia Profile</title>
+    <title>Bernardo Jamili C.- Multimedia Profile</title>
 
 </head>
 
