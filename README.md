@@ -15,7 +15,8 @@
         I am a Grade 11 ICT student.<br>
         My birthday is on jan 13.
     </p>
-    <img src="bernard.jpg" alt="bernard" width="300"
+    <img src="bernard.jpg" alt="bernard" width="300">
+   
         This image represents me as a learner and future programmer.
     </p>
     <hr>
@@ -23,6 +24,7 @@
     <p>
         I always try to improve my coding skills because I want to become a
         About Me
+
 Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
     </p>
     <h2>My Hobbies and Interests</h2>
@@ -36,7 +38,7 @@ Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate 
         <li>Cooking</li>
     </ul>
     <video width="400" controls>
-        <source src="hobbyvideo.mp4" type="video/mp4">
+        <source src="jamili.mp4" type="video/mp4"width="100" height="200">
     </video>
     <p>
         This video is related to my hobbies and interests because it represents
@@ -59,7 +61,7 @@ Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate 
         <b>love dogs</b>.
     </p>
     <audio controls>
-        <source src="favoritesong.mp3" type="audio/mpeg">
+        <source src="fav song.mp3" type="audio/mpeg">
     </audio>
     <p>
         This audio represents one of my favorite songs that helps me relax
