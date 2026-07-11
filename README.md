@@ -10,17 +10,17 @@
 
 <body>
 
-    <h1>Kurt Ian I. Tirol</h1>
+    <h1>Bernardo jamili C.</h1>
 
     <h2>Personal Information</h2>
 
     <p>
 
-        My name is Kurt Ian I. Tirol.<br>
+        My name is bernardo jamili c.<br>
 
         I am a Grade 11 ICT student.<br>
 
-        My birthday is on July 2.
+        My birthday is on jan 13.
 
     </p>
 
@@ -44,7 +44,7 @@
 
         About Me
 
-Hi! My name is Kurt Ian Tirol. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
+Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
       
 
     </p>
