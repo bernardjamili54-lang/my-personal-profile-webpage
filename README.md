@@ -11,7 +11,7 @@
     <h1>Bernardo jamili C.</h1>
     <h2>Personal Information</h2>
     <p>
-        My name is bernardo jamili c.<br>
+        My name is Bernardo Jamili C.<br>
         I am a Grade 11 ICT student.<br>
         My birthday is on jan 13.
     </p>
@@ -25,7 +25,7 @@
         I always try to improve my coding skills because I want to become a
         About Me
 
-Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
+Hi! My name is Bernardo Jamili C. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
     </p>
     <h2>My Hobbies and Interests</h2>
     <p>
@@ -94,7 +94,7 @@ Hi! My name is bernardo jamili c. I am a Grade 11 ICT student who is passionate 
     <p>
         These are the important goals I want to achieve:
     </p>
-    <ol reversed>
+    <ol>
         <li>Become a successful programmer.</li>
         <li>Finish college successfully.</li>
         <li>Graduate from Senior High School.</li>
