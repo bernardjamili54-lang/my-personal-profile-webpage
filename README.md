@@ -16,7 +16,6 @@
         My birthday is on jan 13.
     </p>
     <img src="bernard.jpg" alt="bernard" width="300">
-   
         This image represents me as a learner and future programmer.
     </p>
     <hr>
@@ -24,7 +23,6 @@
     <p>
         I always try to improve my coding skills because I want to become a
         About Me
-
 Hi! My name is Bernardo Jamili C. I am a Grade 11 ICT student who is passionate about technology and programming. I enjoy learning new coding skills and improving my knowledge of web development. My goal is to become a successful software developer in the future.
     </p>
     <h2>My Hobbies and Interests</h2>
