@@ -117,5 +117,6 @@ Hi! My name is Bernardo Jamili C. I am a Grade 11 ICT student who is passionate 
     <p>
         Thank you for reading my personal profile!
     </p>
+
 </body>
 
