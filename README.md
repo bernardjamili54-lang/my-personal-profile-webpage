@@ -9,7 +9,7 @@
     <hr>
     <h2>Who I Am</h2>
     <p>
-        Hello! My name is <b>Jemiel Cañete</b>. I am a Licensed Professional Teacher (LPT) from the Philippines.
+        Hello! My name is <b>bernardo Cañete</b>. I am a Licensed Professional Teacher (LPT) from the Philippines.
         I enjoy learning new skills and helping students improve their English through online and face-to-face classes.
     </p>
     <h2>My Interests and Hobbies</h2>
