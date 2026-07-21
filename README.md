@@ -37,7 +37,7 @@
         <li>Cooking</li>
     </ul>
     <video width="400" controls>
-        <source src="index.mp4" type="video/mp4"width="300">
+        <source src="index.mp4" type="https://github.com/user-attachments/assets/a9e2b094-a8a4-496e-a472-cb6ce3a4deff/mp4"width="300">
     </video>
     <p>
         This video is related to my hobbies and interests because it represents
