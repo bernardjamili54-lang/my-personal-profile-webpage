@@ -36,9 +36,7 @@
         <li>Listen to the music</li>
         <li>Cooking</li>
     </ul>
-    <video>
-        <source src="index.mp4" type="https://github.com/user-attachments/assets/a9e2b094-a8a4-496e-a472-cb6ce3a4deff/mp4"width="300">
-    </video>
+    https://github.com/user-attachments/assets/daeb312b-8086-41ec-9be9-d9bbc22a9808
     <p>
         This video is related to my hobbies and interests because it represents
         one of the activities that I enjoy during my free time.
