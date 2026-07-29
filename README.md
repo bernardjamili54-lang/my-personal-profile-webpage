@@ -15,7 +15,9 @@
         I am a Grade 11 ICT student.<br>
         My birthday is on Jan 13.
     </p>
-    <img width="500"9ea8fe48-5c31-4a83-9cf9-f44489aee5f3.mp4/> 
+  <img  src="1767099958986.jpg"
+      alt="My profile picture"
+      width"250"
     <p>
         This image represents me as a learner and future programmer.
     </p>
