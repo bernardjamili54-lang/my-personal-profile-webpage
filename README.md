@@ -38,8 +38,7 @@
         <li>Listen to the music</li>
         <li>Cooking</li>
     </ul>
-
-https://github.com/user-attachments/assets/603110d2-f723-443e-b64f-5705f338009f
+<source src="9ea8fe48-5c31-4a83-9cf9-f44489aee5f3.mp4">
     <p>
         This video is related to my hobbies and interests because it represents
         one of the activities that I enjoy during my free time.
@@ -57,7 +56,7 @@ https://github.com/user-attachments/assets/603110d2-f723-443e-b64f-5705f338009f
         <b>love cats</b>.
     </p>
     <audio controls>
-        <source src="9ea8fe48-5c31-4a83-9cf9-f44489aee5f3.mp4">
+        <source src="">
     </audio>
     <p>
         This audio represents one of my favorite songs that helps me relax
