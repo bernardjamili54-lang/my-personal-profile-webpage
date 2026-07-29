@@ -38,7 +38,9 @@
         <li>Listen to the music</li>
         <li>Cooking</li>
     </ul>
+    <video control width="400">
 <source src="AQN93-plxCQ1DoyiDzyM4Rdmn2XXwDI4ZP9YU4EserXeTP8UImGQn9-9AAybhFHEs1irUsZ-Kdh-cmGv9yMju2pGIxlaM1_tw3Xw6KgWWA.mp4">
+    </video>
     <p>
         This video is related to my hobbies and interests because it represents
         one of the activities that I enjoy during my free time.
