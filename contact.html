@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Me</title>
 
     <!-- EmailJS -->
@@ -18,14 +21,14 @@
 
     <h1>Contact Me</h1>
 
-     <nav>
-<a href="About me.html">About me</a>  |
-<a href="Hobbies.html">My hobbies</a>  |
-<a href="Goals.html">My goals</a>     |
-<a href="Favorites.html">My Favorites</a>  |     
- <a href="contact.html">Contact Me</a>
- </nav>
- 
+    <nav>
+        <a href="About me.html">About me</a> |
+        <a href="Hobbies.html">My hobbies</a> |
+        <a href="Goals.html">My goals</a> |
+        <a href="Favorites.html">My Favorites</a> |
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
     <hr>
 
     <form id="contact-form">
@@ -42,7 +45,7 @@
 
         <br><br>
 
-        <!-- Gmail -->
+        <!-- Email -->
         <label for="email">Gmail:</label>
         <input
             type="email"
@@ -88,7 +91,7 @@
         </select>
 
         <br><br>
-        
+
         <!-- Message -->
         <label for="message">Message:</label>
         <br>
@@ -110,27 +113,34 @@
     </form>
 
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function(event) {
 
             event.preventDefault();
 
             emailjs.sendForm(
                 "service_dllkglf",
                 "template_oe5a6f3",
-                thismcc                                                                                                                                                              
+                form
             )
-            .then(function() {
+            .then(function(response) {
+
+                console.log("SUCCESS!", response.status, response.text);
 
                 alert("Message sent successfully!");
 
-                document.getElementById("contact-form").reset();
+                form.reset();
 
             })
             .catch(function(error) {
 
-                alert("Message failed to send. Please try again.");
+                console.error("EMAILJS ERROR:", error);
 
-                console.error("EmailJS Error:", error);
+                alert(
+                    "Message failed to send.\n\n" +
+                    "Please check the browser console (F12) for the error."
+                );
 
             });
 
