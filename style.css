@@ -1,72 +1,182 @@
 /* ============================
-   ELEMENT SELECTORS
+GENERAL PAGE STYLE
 ============================ */
+
 body {
-  color: #222222;
-  text-align: left;
+font-family: Arial, sans-serif;
+color: #222222;
+background-color: #eef5ff;
+margin: 0;
+padding: 0 30px 40px;
+line-height: 1.6;
 }
+
+/* ============================
+NAVIGATION
+============================ */
+
+nav {
+background-color: navy;
+text-align: center;
+padding: 15px;
+margin: 0 -30px 20px;
+}
+
+.nav-link {
+color: white;
+text-decoration: none;
+font-weight: bold;
+margin: 0 8px;
+}
+
+.nav-link:hover {
+color: lightblue;
+text-decoration: underline;
+}
+
+.highlight {
+background-color: yellow;
+color: navy;
+padding: 5px 8px;
+border-radius: 5px;
+}
+
+/* ============================
+HEADINGS
+============================ */
 
 h1 {
-  text-align: center;
+text-align: center;
 }
 
-/* ============================
-   CLASS SELECTORS
-============================ */
-
-/* Navigation links - reused across all 6 pages */
-.nav-link {
-  color: navy;
-  font-weight: bold;
-}
-
-/* Extra class on the Contact Me nav link (multiple classes demo) */
-.highlight {
-  background-color: yellow;
-}
-
-/* Section headings - reused on every page */
-.section-title {
-  color: darkslategray;
-  font-weight: bold;
-}
-
-/* Tables - reused on About me.html (hobbies, favorites, education tables) */
-.info-table {
-  background-color: #f9f9f9;
-}
-
-/* Contact form labels */
-.form-label {
-  font-weight: bold;
-}
-
-/* Contact form inputs */
-.form-input {
-  color: navy;
-}
-
-/* ============================
-   ID SELECTORS
-============================ */
-
-/* Header on index.html */
-#main-header {
-  background-color: lightblue;
-  text-align: center;
-}
-
-/* About Me section on index.html */
-#about-section {
-  background-color: #f5f5f5;
-}
-
-/* Page title heading - reused pattern on About me.html and contact.html */
 #page-title {
-  text-align: center;
+text-align: center;
+color: navy;
+font-size: 36px;
+margin-top: 25px;
 }
 
-/* Contact form wrapper on contact.html */
-#contact-section {
-  background-color: #f5f5f5;
+.section-title {
+color: darkslategray;
+font-weight: bold;
+border-bottom: 2px solid navy;
+padding-bottom: 5px;
+margin-top: 30px;
+}
+
+/* ============================
+MAIN HEADER
+============================ */
+
+#main-header {
+background-color: lightblue;
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+}
+
+/* ============================
+ABOUT ME SECTION
+============================ */
+
+#about-section {
+background-color: #f5f5f5;
+padding: 20px;
+border-radius: 10px;
+}
+
+/* ============================
+IMAGES
+============================ */
+
+img {
+display: block;
+margin: 20px auto;
+border-radius: 15px;
+max-width: 100%;
+height: auto;
+}
+
+/* ============================
+TABLES
+============================ */
+
+.info-table {
+width: 100%;
+background-color: #f9f9f9;
+border-collapse: collapse;
+margin: 15px 0 25px;
+}
+
+.info-table th {
+background-color: navy;
+color: white;
+padding: 12px;
+text-align: center;
+}
+
+.info-table td {
+padding: 10px;
+border: 1px solid #cccccc;
+}
+
+.info-table tr:hover {
+background-color: #e6f0ff;
+}
+
+/* ============================
+MULTIMEDIA
+============================ */
+
+video {
+display: block;
+margin: 20px auto;
+max-width: 100%;
+border-radius: 10px;
+}
+
+audio {
+display: block;
+margin: 20px 0;
+width: 100%;
+max-width: 500px;
+}
+
+/* ============================
+CONTACT FORM
+============================ */
+
+.form-label {
+font-weight: bold;
+}
+
+.form-input {
+color: navy;
+padding: 8px;
+border: 1px solid #999999;
+border-radius: 5px;
+}
+
+/* ============================
+LISTS
+============================ */
+
+ol {
+background-color: #f9f9f9;
+padding: 15px 35px;
+border-radius: 8px;
+}
+
+li {
+margin: 5px 0;
+}
+
+/* ============================
+HORIZONTAL LINES
+============================ */
+
+hr {
+border: none;
+border-top: 2px solid #cccccc;
+margin: 25px 0;
 }
