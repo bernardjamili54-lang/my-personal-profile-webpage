@@ -1,1 +1,72 @@
+/* ============================
+   ELEMENT SELECTORS
+============================ */
+body {
+  color: #222222;
+  text-align: left;
+}
 
+h1 {
+  text-align: center;
+}
+
+/* ============================
+   CLASS SELECTORS
+============================ */
+
+/* Navigation links - reused across all 6 pages */
+.nav-link {
+  color: navy;
+  font-weight: bold;
+}
+
+/* Extra class on the Contact Me nav link (multiple classes demo) */
+.highlight {
+  background-color: yellow;
+}
+
+/* Section headings - reused on every page */
+.section-title {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+/* Tables - reused on About me.html (hobbies, favorites, education tables) */
+.info-table {
+  background-color: #f9f9f9;
+}
+
+/* Contact form labels */
+.form-label {
+  font-weight: bold;
+}
+
+/* Contact form inputs */
+.form-input {
+  color: navy;
+}
+
+/* ============================
+   ID SELECTORS
+============================ */
+
+/* Header on index.html */
+#main-header {
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* About Me section on index.html */
+#about-section {
+  background-color: #f5f5f5;
+}
+
+/* Page title heading - reused pattern on About me.html and contact.html */
+#page-title {
+  text-align: center;
+}
+
+/* Contact form wrapper on contact.html */
+#contact-section {
+  background-color: #f5f5f5;
+}
