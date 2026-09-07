@@ -1,65 +1,188 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bernardo Jamili C. - Contact Me</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "egjOQc-7p4HJyyZBq"
+        });
+    </script>
 </head>
-<form>
 
-    <label class="form-label" for="name">Name:</label>
-    <br>
-    <input class="form-input" type="text" id="name" name="name" required>
-    <br><br>
+<body>
 
-    <label class="form-label" for="age">Age:</label>
-    <br>
-    <input class="form-input" type="number" id="age" name="age"
-           min="1" max="100" required>
-    <br><br>
+    <h1 id="page-title">Contact Me</h1>
 
-    <label class="form-label">Gender:</label>
-    <br>
+    <nav>
+        <a class="nav-link" href="index.html">Home</a> |
+        <a class="nav-link" href="about me.html">About Me</a> |
+        <a class="nav-link" href="Hobbies.html">My Hobbies</a> |
+        <a class="nav-link" href="Goals.html">My Goals</a> |
+        <a class="nav-link" href="Favorites.html">My Favorites</a> |
+        <a class="nav-link highlight" href="contact.html">Contact Me</a>
+    </nav>
 
-    <input type="radio" id="male" name="gender" value="Male" required>
-    <label for="male">Male</label>
+    <hr>
 
-    <input type="radio" id="female" name="gender" value="Female">
-    <label for="female">Female</label>
+    <section id="contact-section">
 
-    <br><br>
+        <h2 class="section-title">Get in Touch</h2>
 
-    <label class="form-label" for="strand">Strand:</label>
-    <br>
+        <form id="contact-form">
 
-    <select class="form-input" id="strand" name="strand" required>
-        <option value="">Select your strand</option>
-        <option value="ICT">ICT</option>
-        <option value="STEM">STEM</option>
-        <option value="ABM">ABM</option>
-        <option value="HUMSS">HUMSS</option>
-        <option value="GAS">GAS</option>
-    </select>
+            <label class="form-label" for="name">Name:</label>
+            <br>
 
-    <br><br>
+            <input class="form-input"
+                   type="text"
+                   id="name"
+                   name="name"
+                   required>
 
-    <label class="form-label" for="email">Email:</label>
-    <br>
-    <input class="form-input" type="email" id="email" name="email" required>
-    <br><br>
+            <br><br>
 
-    <label class="form-label" for="message">Message:</label>
-    <br>
 
-    <textarea class="form-input" id="message" name="message"
-              rows="6" cols="40"
-              placeholder="Type your message here..."></textarea>
+            <label class="form-label" for="age">Age:</label>
+            <br>
 
-    <br><br>
+            <input class="form-input"
+                   type="number"
+                   id="age"
+                   name="age"
+                   min="1"
+                   max="100"
+                   required>
 
-    <button type="submit">Send Message</button>
-    <button type="reset">Clear Form</button>
+            <br><br>
 
-</form>
+
+            <label class="form-label">Gender:</label>
+            <br>
+
+            <input type="radio"
+                   id="male"
+                   name="gender"
+                   value="Male"
+                   required>
+
+            <label for="male">Male</label>
+
+            <input type="radio"
+                   id="female"
+                   name="gender"
+                   value="Female">
+
+            <label for="female">Female</label>
+
+            <br><br>
+
+
+            <label class="form-label" for="strand">Strand:</label>
+            <br>
+
+            <select class="form-input"
+                    id="strand"
+                    name="strand"
+                    required>
+
+                <option value="">Select your strand</option>
+                <option value="ICT">ICT</option>
+                <option value="STEM">STEM</option>
+                <option value="ABM">ABM</option>
+                <option value="HUMSS">HUMSS</option>
+                <option value="GAS">GAS</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label class="form-label" for="email">Email:</label>
+            <br>
+
+            <input class="form-input"
+                   type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+            <br><br>
+
+
+            <label class="form-label" for="message">Message:</label>
+            <br>
+
+            <textarea class="form-input"
+                      id="message"
+                      name="message"
+                      rows="6"
+                      cols="40"
+                      placeholder="Type your message here..."
+                      required></textarea>
+
+            <br><br>
+
+
+            <button type="submit">Send Message</button>
+
+            <button type="reset">Clear Form</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- EmailJS Form Script -->
+    <script>
+
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_dllkglf",
+                "template_oe5a6f3",
+                form
+            )
+
+            .then(function(response) {
+
+                console.log("SUCCESS!", response.status, response.text);
+
+                alert("Message sent successfully!");
+
+                form.reset();
+
+            })
+
+            .catch(function(error) {
+
+                console.error("EMAILJS ERROR:", error);
+
+                alert(
+                    "Message failed to send.\n\n" +
+                    "Please check the browser console (F12) for the error."
+                );
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
