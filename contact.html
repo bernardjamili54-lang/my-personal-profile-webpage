@@ -7,51 +7,59 @@
     <title>Bernardo Jamili C. - Contact Me</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<form>
 
-<body>
+    <label class="form-label" for="name">Name:</label>
+    <br>
+    <input class="form-input" type="text" id="name" name="name" required>
+    <br><br>
 
-```
-<nav>
-    <a class="nav-link" href="index.html">Home</a> |
-    <a class="nav-link" href="About me.html">About Me</a> |
-    <a class="nav-link" href="Hobbies.html">My Hobbies</a> |
-    <a class="nav-link" href="Goals.html">My Goals</a> |
-    <a class="nav-link" href="Favorites.html">My Favorites</a> |
-    <a class="nav-link highlight" href="contact.html">Contact Me</a>
-</nav>
+    <label class="form-label" for="age">Age:</label>
+    <br>
+    <input class="form-input" type="number" id="age" name="age"
+           min="1" max="100" required>
+    <br><br>
 
-<hr>
+    <label class="form-label">Gender:</label>
+    <br>
 
-<h1 id="page-title">Contact Me</h1>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
 
-<div id="contact-section">
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
 
-    <h2 class="section-title">Get in Touch</h2>
+    <br><br>
 
-    <form>
+    <label class="form-label" for="strand">Strand:</label>
+    <br>
 
-        <label class="form-label" for="name">Name:</label>
-        <br>
-        <input class="form-input" type="text" id="name" name="name">
-        <br><br>
+    <select class="form-input" id="strand" name="strand" required>
+        <option value="">Select your strand</option>
+        <option value="ICT">ICT</option>
+        <option value="STEM">STEM</option>
+        <option value="ABM">ABM</option>
+        <option value="HUMSS">HUMSS</option>
+        <option value="GAS">GAS</option>
+    </select>
 
-        <label class="form-label" for="email">Email:</label>
-        <br>
-        <input class="form-input" type="email" id="email" name="email">
-        <br><br>
+    <br><br>
 
-        <label class="form-label" for="message">Message:</label>
-        <br>
-        <textarea class="form-input" id="message" name="message"
-                  rows="6" cols="40"></textarea>
-        <br><br>
+    <label class="form-label" for="email">Email:</label>
+    <br>
+    <input class="form-input" type="email" id="email" name="email" required>
+    <br><br>
 
-        <button type="submit">Send Message</button>
+    <label class="form-label" for="message">Message:</label>
+    <br>
 
-    </form>
+    <textarea class="form-input" id="message" name="message"
+              rows="6" cols="40"
+              placeholder="Type your message here..."></textarea>
 
-</div>
-```
+    <br><br>
 
-</body>
-</html>
+    <button type="submit">Send Message</button>
+    <button type="reset">Clear Form</button>
+
+</form>
