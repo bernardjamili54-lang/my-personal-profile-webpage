@@ -1,136 +1,131 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: lightblue;
     color: black;
-    margin: 20px;
+    text-align: left;
 }
 
-/* Navigation */
 nav {
     background-color: navy;
     text-align: center;
-    padding: 15px;
 }
+
+h1 {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: navy;
+}
+
+h3 {
+    color: navy;
+}
+
+p {
+    color: black;
+}
+
+th {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: black;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CLASS SELECTORS
+   ============================== */
 
 .nav-link {
     color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.nav-link:hover {
-    color: lightblue;
 }
 
 .highlight {
     background-color: yellow;
     color: navy;
-    padding: 5px;
+    font-weight: bold;
 }
 
-/* Headings */
-h1 {
-    text-align: center;
+.section-title {
     color: navy;
-}
-
-#page-title {
     text-align: center;
-    color: navy;
+    font-weight: bold;
 }
 
-/* Header */
-#main-header {
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* About Me */
-#about-section {
-    background-color: white;
-    padding: 20px;
-}
-
-/* Images */
-img {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 10px;
-}
-
-/* Tables */
 .info-table {
-    width: 100%;
     background-color: white;
-    border-collapse: collapse;
+    color: black;
 }
 
-.info-table th {
-    background-color: navy;
-    color: white;
-    padding: 10px;
+.about-text {
+    color: black;
 }
 
-.info-table td {
-    padding: 10px;
-    border: 1px solid gray;
+.home-text {
+    color: black;
 }
 
-/* Video */
-video {
-    display: block;
-    margin: 20px auto;
-    width: 500px;
+.goal-text {
+    color: black;
 }
 
-/* Audio */
-audio {
-    width: 500px;
-    margin: 20px 0;
+.hobby-text {
+    color: black;
 }
 
-/* Contact Section */
-#contact-section {
-    background-color: white;
-    padding: 20px;
+.favorite-text {
+    color: black;
 }
 
-/* Form */
 .form-label {
+    color: navy;
     font-weight: bold;
 }
 
 .form-input {
-    padding: 8px;
-    border: 1px solid gray;
-    width: 300px;
-}
-
-/* Button */
-button {
-    background-color: navy;
-    color: white;
-    padding: 10px;
-    border: none;
-}
-
-button:hover {
-    background-color: blue;
-}
-
-/* Lists */
-ol {
     background-color: white;
-    padding: 20px;
+    color: black;
 }
 
-li {
-    margin: 5px;
+
+/* ==============================
+   ID SELECTORS
+   ============================== */
+
+#page-title {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* Line */
-hr {
-    border: 1px solid gray;
+#main-header {
+    background-color: white;
+    text-align: center;
 }
+
+#about-section {
+    background-color: white;
+    text-align: left;
+}
+
+#contact-section {
+    background-color: white;
+    text-align: left;
+}
+
+#contact-form {
+    color: black;
+}
+```
