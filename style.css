@@ -1,3 +1,4 @@
+```css
 body {
     background-color: lightblue;
     color: black;
@@ -63,6 +64,12 @@ p {
    TABLE
    ============================== */
 
+table {
+    width: 80%;
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
 th {
     background-color: navy;
     color: white;
@@ -75,6 +82,13 @@ th {
 
 td {
     color: black;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid navy;
+    padding: 12px;
 }
 
 
@@ -231,28 +245,49 @@ button:hover {
 
     /* CSS TEXT */
     line-height: 1.7;
+
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+
+    border-radius: 10px;
 }
 
 #contact-section {
     background-color: white;
     text-align: left;
+
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+
+    border-radius: 10px;
 }
 
 #contact-form {
     color: black;
 }
+
+
+/* ==============================
+   HOBBY VIDEO
+   ============================== */
+
 .hobby-video {
     display: block;
     margin: 20px auto;
 
     border-radius: 10px;
 
+    /* CSS OPACITY */
     opacity: 0.9;
 }
 
 .hobby-video:hover {
     opacity: 1;
 }
+
+
 /* ==============================
    FAVORITES
    ============================== */
@@ -278,3 +313,4 @@ button:hover {
 .favorite-audio:hover {
     opacity: 1;
 }
+```
