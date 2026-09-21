@@ -253,3 +253,28 @@ button:hover {
 .hobby-video:hover {
     opacity: 1;
 }
+/* ==============================
+   FAVORITES
+   ============================== */
+
+.favorite-list {
+    line-height: 2;
+    font-size: 17px;
+    color: black;
+}
+
+.favorite-list li {
+    letter-spacing: 0.5px;
+}
+
+.favorite-audio {
+    display: block;
+    margin: 20px auto;
+
+    /* CSS OPACITY */
+    opacity: 0.9;
+}
+
+.favorite-audio:hover {
+    opacity: 1;
+}
