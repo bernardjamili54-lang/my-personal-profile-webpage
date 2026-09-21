@@ -1,4 +1,3 @@
-```css
 body {
     background-color: lightblue;
     color: black;
@@ -242,4 +241,15 @@ button:hover {
 #contact-form {
     color: black;
 }
-```
+.hobby-video {
+    display: block;
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    opacity: 0.9;
+}
+
+.hobby-video:hover {
+    opacity: 1;
+}
