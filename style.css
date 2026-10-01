@@ -28,7 +28,7 @@ h1 {
 
     /* CSS FONT */
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 
     /* CSS TEXT */
@@ -41,7 +41,7 @@ h2 {
     color: navy;
 
     /* CSS FONT */
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -219,7 +219,7 @@ button:hover {
 
     /* CSS FONT */
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-size: 30px;
 
     /* CSS TEXT */
     text-transform: uppercase;
@@ -442,4 +442,15 @@ button:hover {
     border-radius: 5px;
 
     font-weight: bold;
+}
+section-title{
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 22px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px gray;
 }
