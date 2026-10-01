@@ -1,3 +1,329 @@
+body {
+    background-color: lightblue;
+    color: black;
+
+    /* CSS TEXT */
+    text-align: left;
+    line-height: 1.6;
+
+    /* CSS FONT */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    /* CSS GRADIENT */
+    background: linear-gradient(to right, navy, #4169e1);
+
+    text-align: center;
+    padding: 15px;
+
+    /* CSS TEXT */
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+
+    /* CSS FONT */
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: bold;
+
+    /* CSS TEXT */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px gray;
+}
+
+h2 {
+    color: navy;
+
+    /* CSS FONT */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    color: navy;
+    font-size: 20px;
+}
+
+p {
+    color: black;
+
+    /* CSS TEXT */
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==============================
+   TABLE
+   ============================== */
+
+table {
+    width: 80%;
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+
+    /* CSS TEXT */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    color: black;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid navy;
+    padding: 12px;
+}
+
+
+/* ==============================
+   BUTTON
+   ============================== */
+
+button {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+
+    /* CSS FONT */
+    font-size: 16px;
+
+    /* CSS TEXT */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    /* CSS OPACITY */
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+/* ==============================
+   CLASS SELECTORS
+   ============================== */
+
+.nav-link {
+    color: white;
+
+    /* CSS TEXT */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+
+    /* CSS OPACITY */
+    opacity: 0.7;
+}
+
+.highlight {
+    background-color: yellow;
+    color: navy;
+    font-weight: bold;
+
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.section-title {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+
+    /* CSS TEXT */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.info-table {
+    background-color: white;
+    color: black;
+}
+
+.about-text {
+    color: black;
+}
+
+.home-text {
+    color: black;
+
+    /* CSS TEXT */
+    line-height: 1.8;
+}
+
+.goal-text {
+    color: black;
+}
+
+.hobby-text {
+    color: black;
+}
+
+.favorite-text {
+    color: black;
+}
+
+.form-label {
+    color: navy;
+    font-weight: bold;
+
+    /* CSS FONT */
+    font-size: 16px;
+}
+
+.form-input {
+    background-color: white;
+    color: black;
+
+    /* CSS FONT */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    padding: 8px;
+    border: 1px solid navy;
+}
+
+
+/* ==============================
+   ID SELECTORS
+   ============================== */
+
+#page-title {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+
+    /* CSS FONT */
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+
+    /* CSS TEXT */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+#main-header {
+    /* CSS GRADIENT */
+    background: linear-gradient(to bottom, white, lightblue);
+
+    text-align: center;
+    padding: 30px;
+
+    /* CSS OPACITY */
+    opacity: 0.95;
+
+    /* 2.2 POSITION */
+    position: relative;
+
+    /* 2.2 BOX MODEL */
+    margin-bottom: 20px;
+}
+
+#about-section {
+    background-color: white;
+    text-align: left;
+
+    /* CSS TEXT */
+    line-height: 1.7;
+
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+#contact-section {
+    background-color: white;
+    text-align: left;
+
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+#contact-form {
+    color: black;
+}
+
+
+/* ==============================
+   HOBBY VIDEO
+   ============================== */
+
+.hobby-video {
+    display: block;
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    /* CSS OPACITY */
+    opacity: 0.9;
+}
+
+.hobby-video:hover {
+    opacity: 1;
+}
+
+
+/* ==============================
+   FAVORITES
+   ============================== */
+
+.favorite-list {
+    line-height: 2;
+    font-size: 17px;
+    color: black;
+}
+
+.favorite-list li {
+    letter-spacing: 0.5px;
+}
+
+.favorite-audio {
+    display: block;
+    margin: 20px auto;
+
+    /* CSS OPACITY */
+    opacity: 0.9;
+}
+
+.favorite-audio:hover {
+    opacity: 1;
+}
+
+
+/* ==============================
+   2.2 CSS BOX MODEL
+   ============================== */
+
 .card {
     background-color: white;
 
