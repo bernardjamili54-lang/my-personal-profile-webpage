@@ -1,315 +1,119 @@
-body {
-    background-color: lightblue;
-    color: black;
+.card {
+    background-color: white;
 
-    /* CSS TEXT */
-    text-align: left;
-    line-height: 1.6;
-
-    /* CSS FONT */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-nav {
-    /* CSS GRADIENT */
-    background: linear-gradient(to right, navy, #4169e1);
-
-    text-align: center;
-    padding: 15px;
-
-    /* CSS TEXT */
-    letter-spacing: 1px;
-}
-
-h1 {
-    color: navy;
-    text-align: center;
-
-    /* CSS FONT */
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
-    font-weight: bold;
-
-    /* CSS TEXT */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 3px gray;
-}
-
-h2 {
-    color: navy;
-
-    /* CSS FONT */
-    font-size: 25px;
-    font-weight: bold;
-}
-
-h3 {
-    color: navy;
-    font-size: 20px;
-}
-
-p {
-    color: black;
-
-    /* CSS TEXT */
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-}
-
-
-/* ==============================
-   TABLE
-   ============================== */
-
-table {
+    /* BOX MODEL */
     width: 80%;
     margin: 25px auto;
-    border-collapse: collapse;
-}
+    padding: 25px;
+    border: 3px solid navy;
 
-th {
-    background-color: navy;
-    color: white;
-    font-weight: bold;
+    border-radius: 10px;
 
-    /* CSS TEXT */
-    text-align: center;
-    text-transform: uppercase;
-}
-
-td {
-    color: black;
-    background-color: white;
-}
-
-th,
-td {
-    border: 1px solid navy;
-    padding: 12px;
+    /* POSITION */
+    position: relative;
 }
 
 
 /* ==============================
-   BUTTON
+   2.2 FLOAT
    ============================== */
 
-button {
-    background-color: navy;
-    color: white;
-    font-weight: bold;
+.profile-image {
+    float: left;
 
-    /* CSS FONT */
-    font-size: 16px;
+    width: 300px;
+    height: auto;
 
-    /* CSS TEXT */
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 10px 25px 15px 0;
+    padding: 5px;
 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-
-    /* CSS OPACITY */
-    opacity: 0.9;
+    border: 3px solid navy;
+    border-radius: 10px;
 }
 
-button:hover {
-    opacity: 0.7;
+
+/* Clears the floated image */
+
+.clear-float {
+    clear: both;
 }
 
 
 /* ==============================
-   CLASS SELECTORS
+   2.2 LIST
    ============================== */
 
-.nav-link {
+.profile-list {
+    background-color: lightblue;
+
+    margin: 20px 0;
+    padding: 20px 40px;
+
+    border: 2px solid navy;
+    border-radius: 8px;
+
+    line-height: 2;
+}
+
+.profile-list li {
+    color: navy;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   2.2 LINKS
+   ============================== */
+
+.page-links {
+    margin-top: 20px;
+}
+
+.page-links a {
+    display: inline-block;
+
+    background-color: navy;
     color: white;
 
-    /* CSS TEXT */
     text-decoration: none;
     font-weight: bold;
+
+    padding: 10px 15px;
+    margin: 5px;
+
+    border: 2px solid navy;
+    border-radius: 5px;
 }
 
-.nav-link:hover {
+.page-links a:hover {
+    background-color: royalblue;
+    color: white;
+
     text-decoration: underline;
-
-    /* CSS OPACITY */
-    opacity: 0.7;
 }
 
-.highlight {
+
+/* ==============================
+   2.2 POSITION + Z-INDEX
+   ============================== */
+
+.profile-badge {
+    /* POSITION */
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    /* Z-INDEX */
+    z-index: 10;
+
     background-color: yellow;
     color: navy;
+
+    padding: 8px 12px;
+
+    border: 2px solid navy;
+    border-radius: 5px;
+
     font-weight: bold;
-
-    padding: 5px 8px;
-    border-radius: 4px;
 }
-
-.section-title {
-    color: navy;
-    text-align: center;
-    font-weight: bold;
-
-    /* CSS TEXT */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px gray;
-}
-
-.info-table {
-    background-color: white;
-    color: black;
-}
-
-.about-text {
-    color: black;
-}
-
-.home-text {
-    color: black;
-
-    /* CSS TEXT */
-    line-height: 1.8;
-}
-
-.goal-text {
-    color: black;
-}
-
-.hobby-text {
-    color: black;
-}
-
-.favorite-text {
-    color: black;
-}
-
-.form-label {
-    color: navy;
-    font-weight: bold;
-
-    /* CSS FONT */
-    font-size: 16px;
-}
-
-.form-input {
-    background-color: white;
-    color: black;
-
-    /* CSS FONT */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-
-    padding: 8px;
-    border: 1px solid navy;
-}
-
-
-/* ==============================
-   ID SELECTORS
-   ============================== */
-
-#page-title {
-    color: navy;
-    text-align: center;
-    font-weight: bold;
-
-    /* CSS FONT */
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
-
-    /* CSS TEXT */
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px gray;
-}
-
-#main-header {
-    /* CSS GRADIENT */
-    background: linear-gradient(to bottom, white, lightblue);
-
-    text-align: center;
-    padding: 30px;
-
-    /* CSS OPACITY */
-    opacity: 0.95;
-}
-
-#about-section {
-    background-color: white;
-    text-align: left;
-
-    /* CSS TEXT */
-    line-height: 1.7;
-
-    width: 80%;
-    margin: 25px auto;
-    padding: 20px;
-
-    border-radius: 10px;
-}
-
-#contact-section {
-    background-color: white;
-    text-align: left;
-
-    width: 80%;
-    margin: 25px auto;
-    padding: 20px;
-
-    border-radius: 10px;
-}
-
-#contact-form {
-    color: black;
-}
-
-
-/* ==============================
-   HOBBY VIDEO
-   ============================== */
-
-.hobby-video {
-    display: block;
-    margin: 20px auto;
-
-    border-radius: 10px;
-
-    /* CSS OPACITY */
-    opacity: 0.9;
-}
-
-.hobby-video:hover {
-    opacity: 1;
-}
-
-
-/* ==============================
-   FAVORITES
-   ============================== */
-
-.favorite-list {
-    line-height: 2;
-    font-size: 17px;
-    color: black;
-}
-
-.favorite-list li {
-    letter-spacing: 0.5px;
-}
-
-.favorite-audio {
-    display: block;
-    margin: 20px auto;
-
-    /* CSS OPACITY */
-    opacity: 0.9;
-}
-
-.favorite-audio:hover {
-    opacity: 1;
-}
-```
