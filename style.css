@@ -11,6 +11,11 @@ body {
     font-size: 16px;
 }
 
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
 nav {
     /* CSS GRADIENT */
     background: linear-gradient(to right, navy, #4169e1);
@@ -21,6 +26,11 @@ nav {
     /* CSS TEXT */
     letter-spacing: 1px;
 }
+
+
+/* ==============================
+   HEADINGS
+   ============================== */
 
 h1 {
     color: navy;
@@ -47,6 +57,11 @@ h3 {
     color: navy;
     font-size: 20px;
 }
+
+
+/* ==============================
+   PARAGRAPHS
+   ============================== */
 
 p {
     color: black;
@@ -122,6 +137,7 @@ button:hover {
 }
 
 .nav-link:hover {
+    color: yellow;
     text-decoration: underline;
     opacity: 0.7;
 }
@@ -485,6 +501,8 @@ button:hover {
 /* Hover over navigation link */
 .nav-link:hover {
     color: yellow;
+    text-decoration: underline;
+    opacity: 0.7;
 }
 
 /* While clicking page link */
@@ -531,6 +549,36 @@ button:hover {
 }
 
 
+/* ==========================================
+   FAVORITE COLOR IMAGE
+   ========================================== */
+
+.favorite-color-image {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.favorite-color-image img {
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+
+    border: 4px solid navy;
+    border-radius: 10px;
+
+    padding: 5px;
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+/* Pseudo Class */
+.favorite-color-image img:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+
 /* ==============================
    RESPONSIVE DESIGN
    ============================== */
@@ -556,59 +604,11 @@ button:hover {
         width: 90%;
     }
 
+    .favorite-color-image img {
+        width: 90%;
+    }
+
     nav {
         line-height: 2.5;
     }
-}
-/* FAVORITE COLORS */
-
-.color-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 25px 0;
-}
-
-.color-box {
-    width: 200px;
-    padding: 25px;
-    border: 3px solid navy;
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.color-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.color-box p {
-    font-weight: bold;
-}
-
-/* Blue */
-.blue-color {
-    background-color: blue;
-    color: white;
-}
-
-/* Pink */
-.pink-color {
-    background-color: pink;
-    color: black;
-}
-
-/* Black */
-.black-color {
-    background-color: black;
-    color: white;
-}
-
-/* Hover Effect */
-.color-box:hover {
-    transform: scale(1.05);
-    opacity: 0.85;
 }
