@@ -20,8 +20,7 @@
 
 <body>
 
-    <h1 id="page-title">Contact Me</h1>
-
+    <!-- Navigation -->
     <nav>
         <a class="nav-link" href="index.html">Home</a> |
         <a class="nav-link" href="About me.html">About Me</a> |
@@ -31,10 +30,28 @@
         <a class="nav-link highlight" href="contact.html">Contact Me</a>
     </nav>
 
-    <hr>
 
+    <!-- Main Content -->
     <section id="contact-section">
 
+        <h1 id="page-title">Contact Me</h1>
+
+        <h2 class="section-title gallery-title">
+            Let's Connect
+        </h2>
+
+        <p class="about-text">
+            Thank you for visiting my personal profile website.
+            If you have any questions, comments, or suggestions,
+            you can send me a message using the form below.
+        </p>
+
+        <p class="about-text">
+            I would be happy to hear from you!
+        </p>
+
+
+        <!-- Contact Form -->
         <form id="contact-form">
 
             <label class="form-label" for="name">Name:</label>
@@ -48,6 +65,7 @@
 
             <br><br>
 
+
             <label class="form-label" for="age">Age:</label>
             <br>
 
@@ -60,6 +78,7 @@
                    required>
 
             <br><br>
+
 
             <label class="form-label">Gender:</label>
             <br>
@@ -76,20 +95,18 @@
                    id="female"
                    name="gender"
                    value="Female">
-                              
 
             <label for="female">Female</label>
 
-
             <input type="radio"
-                id="Lesbian"
-                name="gender"
-                value="Lesbian">
+                   id="lesbian"
+                   name="gender"
+                   value="Lesbian">
 
-            <label for="Lesbian">Lesbian</label>
-                
-                
+            <label for="lesbian">Lesbian</label>
+
             <br><br>
+
 
             <label class="form-label" for="strand">Strand:</label>
             <br>
@@ -111,6 +128,7 @@
 
             <br><br>
 
+
             <label class="form-label" for="email">Email:</label>
             <br>
 
@@ -121,6 +139,7 @@
                    required>
 
             <br><br>
+
 
             <label class="form-label" for="message">Message:</label>
             <br>
@@ -135,6 +154,7 @@
 
             <br><br>
 
+
             <button type="submit">Send Message</button>
 
             <button type="reset">Clear Message</button>
@@ -142,6 +162,29 @@
         </form>
 
     </section>
+
+
+    <!-- Personal Message -->
+    <div class="card">
+
+        <h2 class="section-title gallery-title">
+            Thank You!
+        </h2>
+
+        <p class="about-text">
+            Thank you for taking the time to explore my website.
+            I hope you enjoyed learning more about me, my hobbies,
+            my goals, and my favorite things.
+        </p>
+
+        <p class="about-text">
+            <strong>
+                "Every connection is an opportunity to learn something new."
+            </strong>
+        </p>
+
+    </div>
+
 
     <!-- EmailJS Form Script -->
     <script>
