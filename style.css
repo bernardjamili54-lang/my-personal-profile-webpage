@@ -39,8 +39,6 @@ h1 {
 
 h2 {
     color: navy;
-
-    /* CSS FONT */
     font-size: 22px;
     font-weight: bold;
 }
@@ -52,8 +50,6 @@ h3 {
 
 p {
     color: black;
-
-    /* CSS TEXT */
     line-height: 1.8;
     letter-spacing: 0.5px;
 }
@@ -73,8 +69,6 @@ th {
     background-color: navy;
     color: white;
     font-weight: bold;
-
-    /* CSS TEXT */
     text-align: center;
     text-transform: uppercase;
 }
@@ -99,19 +93,16 @@ button {
     background-color: navy;
     color: white;
     font-weight: bold;
-
-    /* CSS FONT */
     font-size: 16px;
 
-    /* CSS TEXT */
     text-transform: uppercase;
     letter-spacing: 1px;
 
     padding: 10px 20px;
+
     border: none;
     border-radius: 5px;
 
-    /* CSS OPACITY */
     opacity: 0.9;
 }
 
@@ -126,16 +117,12 @@ button:hover {
 
 .nav-link {
     color: white;
-
-    /* CSS TEXT */
     text-decoration: none;
     font-weight: bold;
 }
 
 .nav-link:hover {
     text-decoration: underline;
-
-    /* CSS OPACITY */
     opacity: 0.7;
 }
 
@@ -152,8 +139,8 @@ button:hover {
     color: navy;
     text-align: center;
     font-weight: bold;
+    font-size: 22px;
 
-    /* CSS TEXT */
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px gray;
@@ -170,8 +157,6 @@ button:hover {
 
 .home-text {
     color: black;
-
-    /* CSS TEXT */
     line-height: 1.8;
 }
 
@@ -190,8 +175,6 @@ button:hover {
 .form-label {
     color: navy;
     font-weight: bold;
-
-    /* CSS FONT */
     font-size: 16px;
 }
 
@@ -199,11 +182,11 @@ button:hover {
     background-color: white;
     color: black;
 
-    /* CSS FONT */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 
     padding: 8px;
+
     border: 1px solid navy;
 }
 
@@ -217,24 +200,20 @@ button:hover {
     text-align: center;
     font-weight: bold;
 
-    /* CSS FONT */
     font-family: Georgia, "Times New Roman", serif;
     font-size: 30px;
 
-    /* CSS TEXT */
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px gray;
 }
 
 #main-header {
-    /* CSS GRADIENT */
     background: linear-gradient(to bottom, white, lightblue);
 
     text-align: center;
     padding: 30px;
 
-    /* CSS OPACITY */
     opacity: 0.95;
 
     /* 2.2 POSITION */
@@ -247,8 +226,6 @@ button:hover {
 #about-section {
     background-color: white;
     text-align: left;
-
-    /* CSS TEXT */
     line-height: 1.7;
 
     width: 80%;
@@ -284,7 +261,6 @@ button:hover {
 
     border-radius: 10px;
 
-    /* CSS OPACITY */
     opacity: 0.9;
 }
 
@@ -311,7 +287,6 @@ button:hover {
     display: block;
     margin: 20px auto;
 
-    /* CSS OPACITY */
     opacity: 0.9;
 }
 
@@ -327,15 +302,13 @@ button:hover {
 .card {
     background-color: white;
 
-    /* BOX MODEL */
     width: 80%;
     margin: 25px auto;
     padding: 25px;
-    border: 3px solid navy;
 
+    border: 3px solid navy;
     border-radius: 10px;
 
-    /* POSITION */
     position: relative;
 }
 
@@ -356,9 +329,6 @@ button:hover {
     border: 3px solid navy;
     border-radius: 10px;
 }
-
-
-/* Clears the floated image */
 
 .clear-float {
     clear: both;
@@ -424,13 +394,11 @@ button:hover {
    ============================== */
 
 .profile-badge {
-    /* POSITION */
     position: absolute;
 
     top: 15px;
     right: 20px;
 
-    /* Z-INDEX */
     z-index: 10;
 
     background-color: yellow;
@@ -443,17 +411,8 @@ button:hover {
 
     font-weight: bold;
 }
-section-title{
-    color: navy;
-    text-align: center;
-    font-weight: bold;
 
-    font-size: 22px;
 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px gray;
-}
 /* ==========================================
    2.3 CSS IMAGE GALLERY
    ========================================== */
@@ -471,11 +430,13 @@ section-title{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     gap: 20px;
 }
 
 .gallery-item {
     width: 250px;
+
     background-color: lightblue;
 
     border: 3px solid navy;
@@ -483,7 +444,6 @@ section-title{
 
     padding: 10px;
 
-    /* Makes the hover effect smooth */
     transition: 0.3s;
 }
 
@@ -498,6 +458,7 @@ section-title{
 
 .gallery-description {
     color: navy;
+
     font-weight: bold;
     font-size: 17px;
 
@@ -509,31 +470,33 @@ section-title{
    2.3 CSS PSEUDO CLASSES
    ========================================== */
 
-/* Changes gallery item when mouse is over it */
+/* Hover over gallery */
 .gallery-item:hover {
     background-color: white;
+
     transform: scale(1.05);
 }
 
-/* Changes gallery image when mouse is over it */
+/* Hover over gallery image */
 .gallery-item:hover img {
     opacity: 0.8;
 }
 
-/* Changes navigation link when mouse is over it */
+/* Hover over navigation link */
 .nav-link:hover {
     color: yellow;
 }
 
-/* Changes page link while it is being clicked */
+/* While clicking page link */
 .page-links a:active {
     background-color: yellow;
     color: navy;
 }
 
-/* Changes form input when selected */
+/* When form input is selected */
 .form-input:focus {
     background-color: lightyellow;
+
     border: 2px solid royalblue;
 }
 
@@ -542,25 +505,58 @@ section-title{
    2.3 CSS PSEUDO ELEMENTS
    ========================================== */
 
-/* Adds a camera before the gallery title */
+/* Adds camera before gallery title */
 .gallery-title::before {
     content: "📷 ";
 }
 
-/* Adds a camera after the gallery title */
+/* Adds camera after gallery title */
 .gallery-title::after {
     content: " 📷";
 }
 
-/* Makes the first letter of the introduction bigger */
+/* Changes first letter */
 .gallery-intro::first-letter {
     color: navy;
+
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Adds a symbol before every gallery description */
+/* Adds star before gallery descriptions */
 .gallery-description::before {
     content: "★ ";
+
     color: royalblue;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+@media screen and (max-width: 700px) {
+
+    .card {
+        width: 85%;
+    }
+
+    .profile-image {
+        float: none;
+
+        display: block;
+
+        width: 90%;
+        max-width: 300px;
+
+        margin: 10px auto 20px;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+
+    nav {
+        line-height: 2.5;
+    }
 }
