@@ -582,6 +582,18 @@ iframe {
         width: 96%;
         padding: 12px;
     }
+    /* Improve image loading and responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep profile image responsive */
+.profile-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
 
     .gallery-item img {
         height: 180px;
