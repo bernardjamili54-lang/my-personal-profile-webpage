@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Bernardo Jamili C. - Contact Me</title>
-
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script>
         emailjs.init({
             publicKey: "egjOQc-7p4HJyyZBq"
@@ -20,210 +16,162 @@
 
 <body>
 
-    <!-- Navigation -->
     <nav>
-        <a class="nav-link" href="index.html">Home</a> |
-        <a class="nav-link" href="About me.html">About Me</a> |
-        <a class="nav-link" href="Hobbies.html">My Hobbies</a> |
-        <a class="nav-link" href="Goals.html">My Goals</a> |
-        <a class="nav-link" href="Favorites.html">My Favorites</a> |
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="About me.html">About Me</a>
+        <a class="nav-link" href="Hobbies.html">My Hobbies</a>
+        <a class="nav-link" href="Goals.html">My Goals</a>
+        <a class="nav-link" href="Favorites.html">My Favorites</a>
         <a class="nav-link highlight" href="contact.html">Contact Me</a>
     </nav>
 
+    <main>
 
-    <!-- Main Content -->
-    <section id="contact-section">
+        <section id="contact-section">
 
-        <h1 id="page-title">Contact Me</h1>
+            <h1 id="page-title">Contact Me</h1>
 
-        <h2 class="section-title gallery-title">
-            Let's Connect
-        </h2>
+            <h2 class="section-title gallery-title">Let's Connect</h2>
 
-        <p class="about-text">
-            Thank you for visiting my personal profile website.
-            If you have any questions, comments, or suggestions,
-            you can send me a message using the form below.
-        </p>
+            <p class="about-text">
+                Thank you for visiting my personal profile website.
+                If you have any questions, comments, or suggestions,
+                you can send me a message using the form below.
+            </p>
 
-        <p class="about-text">
-            I would be happy to hear from you!
-        </p>
+            <p class="about-text">
+                I would be happy to hear from you!
+            </p>
 
+            <form id="contact-form">
 
-        <!-- Contact Form -->
-        <form id="contact-form">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input"
+                       type="text"
+                       id="name"
+                       name="name"
+                       autocomplete="name"
+                       required>
 
-            <label class="form-label" for="name">Name:</label>
-            <br>
+                <label class="form-label" for="age">Age:</label>
+                <input class="form-input"
+                       type="number"
+                       id="age"
+                       name="age"
+                       min="1"
+                       max="100"
+                       required>
 
-            <input class="form-input"
-                   type="text"
-                   id="name"
-                   name="name"
-                   required>
+                <span class="form-label">Gender:</span>
 
-            <br><br>
+                <div>
+                    <input type="radio"
+                           id="male"
+                           name="gender"
+                           value="Male"
+                           required>
+                    <label for="male">Male</label>
 
+                    <input type="radio"
+                           id="female"
+                           name="gender"
+                           value="Female">
+                    <label for="female">Female</label>
 
-            <label class="form-label" for="age">Age:</label>
-            <br>
+                    <input type="radio"
+                           id="lesbian"
+                           name="gender"
+                           value="Lesbian">
+                    <label for="lesbian">Lesbian</label>
+                </div>
 
-            <input class="form-input"
-                   type="number"
-                   id="age"
-                   name="age"
-                   min="1"
-                   max="100"
-                   required>
+                <label class="form-label" for="strand">Strand:</label>
+                <select class="form-input"
+                        id="strand"
+                        name="strand"
+                        required>
+                    <option value="">Select your strand</option>
+                    <option value="ICT">ICT</option>
+                    <option value="STEM">STEM</option>
+                    <option value="ABM">ABM</option>
+                    <option value="HUMSS">HUMSS</option>
+                    <option value="GAS">GAS</option>
+                    <option value="TVL">TVL</option>
+                </select>
 
-            <br><br>
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input"
+                       type="email"
+                       id="email"
+                       name="email"
+                       autocomplete="email"
+                       required>
 
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-input"
+                          id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Type your message here..."
+                          required></textarea>
 
-            <label class="form-label">Gender:</label>
-            <br>
+                <div>
+                    <button type="submit" id="send-button">Send Message</button>
+                    <button type="reset">Clear Message</button>
+                </div>
 
-            <input type="radio"
-                   id="male"
-                   name="gender"
-                   value="Male"
-                   required>
+            </form>
 
-            <label for="male">Male</label>
+        </section>
 
-            <input type="radio"
-                   id="female"
-                   name="gender"
-                   value="Female">
+        <section class="card">
 
-            <label for="female">Female</label>
+            <h2 class="section-title gallery-title">Thank You!</h2>
 
-            <input type="radio"
-                   id="lesbian"
-                   name="gender"
-                   value="Lesbian">
+            <p class="about-text">
+                Thank you for taking the time to explore my website.
+                I hope you enjoyed learning more about me, my hobbies,
+                my goals, and my favorite things.
+            </p>
 
-            <label for="lesbian">Lesbian</label>
+            <p class="about-text">
+                <strong>
+                    "Every connection is an opportunity to learn something new."
+                </strong>
+            </p>
 
-            <br><br>
+        </section>
 
+    </main>
 
-            <label class="form-label" for="strand">Strand:</label>
-            <br>
-
-            <select class="form-input"
-                    id="strand"
-                    name="strand"
-                    required>
-
-                <option value="">Select your strand</option>
-                <option value="ICT">ICT</option>
-                <option value="STEM">STEM</option>
-                <option value="ABM">ABM</option>
-                <option value="HUMSS">HUMSS</option>
-                <option value="GAS">GAS</option>
-                <option value="TVL">TVL</option>
-
-            </select>
-
-            <br><br>
-
-
-            <label class="form-label" for="email">Email:</label>
-            <br>
-
-            <input class="form-input"
-                   type="email"
-                   id="email"
-                   name="email"
-                   required>
-
-            <br><br>
-
-
-            <label class="form-label" for="message">Message:</label>
-            <br>
-
-            <textarea class="form-input"
-                      id="message"
-                      name="message"
-                      rows="6"
-                      cols="40"
-                      placeholder="Type your message here..."
-                      required></textarea>
-
-            <br><br>
-
-
-            <button type="submit">Send Message</button>
-
-            <button type="reset">Clear Message</button>
-
-        </form>
-
-    </section>
-
-
-    <!-- Personal Message -->
-    <div class="card">
-
-        <h2 class="section-title gallery-title">
-            Thank You!
-        </h2>
-
-        <p class="about-text">
-            Thank you for taking the time to explore my website.
-            I hope you enjoyed learning more about me, my hobbies,
-            my goals, and my favorite things.
-        </p>
-
-        <p class="about-text">
-            <strong>
-                "Every connection is an opportunity to learn something new."
-            </strong>
-        </p>
-
-    </div>
-
-
-    <!-- EmailJS Form Script -->
     <script>
-
         const form = document.getElementById("contact-form");
+        const sendButton = document.getElementById("send-button");
 
         form.addEventListener("submit", function(event) {
-
             event.preventDefault();
+
+            sendButton.disabled = true;
+            sendButton.textContent = "Sending...";
 
             emailjs.sendForm(
                 "service_dllkglf",
                 "template_oe5a6f3",
                 form
             )
-
-            .then(function(response) {
-
-                console.log("SUCCESS!", response.status, response.text);
-
+            .then(function() {
                 alert("Message sent successfully!");
-
                 form.reset();
-
             })
-
             .catch(function(error) {
-
                 console.error("EMAILJS ERROR:", error);
-
-                alert(
-                    "Message failed to send.\n\n" +
-                    "Please check the browser console (F12) for the error."
-                );
-
+                alert("Message failed to send. Please try again later.");
+            })
+            .finally(function() {
+                sendButton.disabled = false;
+                sendButton.textContent = "Send Message";
             });
-
         });
-
     </script>
 
 </body>
