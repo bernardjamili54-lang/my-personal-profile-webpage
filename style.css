@@ -1,47 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightblue;
     color: black;
-
-    /* CSS TEXT */
     text-align: left;
     line-height: 1.6;
-
-    /* CSS FONT */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* ==============================
-   NAVIGATION
-   ============================== */
+/* NAVIGATION */
 
 nav {
-    /* CSS GRADIENT */
     background: linear-gradient(to right, navy, #4169e1);
-
     text-align: center;
     padding: 15px;
-
-    /* CSS TEXT */
     letter-spacing: 1px;
+    line-height: 2;
 }
 
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+    margin: 3px;
+}
 
-/* ==============================
-   HEADINGS
-   ============================== */
+.nav-link:hover {
+    color: yellow;
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.highlight {
+    background-color: yellow;
+    color: navy;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+/* HEADINGS */
 
 h1 {
     color: navy;
     text-align: center;
-
-    /* CSS FONT */
     font-family: Georgia, "Times New Roman", serif;
     font-size: 30px;
     font-weight: bold;
-
-    /* CSS TEXT */
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 3px gray;
@@ -58,10 +74,28 @@ h3 {
     font-size: 20px;
 }
 
+#page-title {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
 
-/* ==============================
-   PARAGRAPHS
-   ============================== */
+.section-title {
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+/* PARAGRAPHS */
 
 p {
     color: black;
@@ -69,10 +103,16 @@ p {
     letter-spacing: 0.5px;
 }
 
+.about-text,
+.home-text,
+.goal-text,
+.hobby-text,
+.favorite-text {
+    color: black;
+    line-height: 1.8;
+}
 
-/* ==============================
-   TABLE
-   ============================== */
+/* TABLE */
 
 table {
     width: 80%;
@@ -99,94 +139,32 @@ td {
     padding: 12px;
 }
 
+.info-table {
+    background-color: white;
+    color: black;
+}
 
-/* ==============================
-   BUTTON
-   ============================== */
+/* BUTTON */
 
 button {
     background-color: navy;
     color: white;
     font-weight: bold;
     font-size: 16px;
-
     text-transform: uppercase;
     letter-spacing: 1px;
-
     padding: 10px 20px;
-
     border: none;
     border-radius: 5px;
-
     opacity: 0.9;
+    cursor: pointer;
 }
 
 button:hover {
     opacity: 0.7;
 }
 
-
-/* ==============================
-   CLASS SELECTORS
-   ============================== */
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    color: yellow;
-    text-decoration: underline;
-    opacity: 0.7;
-}
-
-.highlight {
-    background-color: yellow;
-    color: navy;
-    font-weight: bold;
-
-    padding: 5px 8px;
-    border-radius: 4px;
-}
-
-.section-title {
-    color: navy;
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px gray;
-}
-
-.info-table {
-    background-color: white;
-    color: black;
-}
-
-.about-text {
-    color: black;
-}
-
-.home-text {
-    color: black;
-    line-height: 1.8;
-}
-
-.goal-text {
-    color: black;
-}
-
-.hobby-text {
-    color: black;
-}
-
-.favorite-text {
-    color: black;
-}
+/* FORM */
 
 .form-label {
     color: navy;
@@ -197,68 +175,39 @@ button:hover {
 .form-input {
     background-color: white;
     color: black;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-
     padding: 8px;
-
     border: 1px solid navy;
+    max-width: 100%;
 }
 
-
-/* ==============================
-   ID SELECTORS
-   ============================== */
-
-#page-title {
-    color: navy;
-    text-align: center;
-    font-weight: bold;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
-
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px gray;
+.form-input:focus {
+    background-color: lightyellow;
+    border: 2px solid royalblue;
 }
+
+/* MAIN HEADER */
 
 #main-header {
     background: linear-gradient(to bottom, white, lightblue);
-
     text-align: center;
     padding: 30px;
-
     opacity: 0.95;
-
-    /* 2.2 POSITION */
     position: relative;
-
-    /* 2.2 BOX MODEL */
     margin-bottom: 20px;
 }
 
-#about-section {
-    background-color: white;
-    text-align: left;
-    line-height: 1.7;
+/* CONTENT SECTIONS */
 
-    width: 80%;
-    margin: 25px auto;
-    padding: 20px;
-
-    border-radius: 10px;
-}
-
+#about-section,
 #contact-section {
     background-color: white;
     text-align: left;
-
     width: 80%;
+    max-width: 1100px;
     margin: 25px auto;
     padding: 20px;
-
     border-radius: 10px;
 }
 
@@ -266,28 +215,168 @@ button:hover {
     color: black;
 }
 
+/* CARDS */
 
-/* ==============================
-   HOBBY VIDEO
-   ============================== */
-
-.hobby-video {
-    display: block;
-    margin: 20px auto;
-
+.card {
+    background-color: white;
+    width: 80%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 3px solid navy;
     border-radius: 10px;
-
-    opacity: 0.9;
+    position: relative;
 }
 
-.hobby-video:hover {
-    opacity: 1;
+/* PROFILE IMAGE */
+
+.profile-image {
+    float: left;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 25px 15px 0;
+    padding: 5px;
+    border: 3px solid navy;
+    border-radius: 10px;
 }
 
+.clear-float {
+    clear: both;
+}
 
-/* ==============================
-   FAVORITES
-   ============================== */
+/* PROFILE LIST */
+
+.profile-list {
+    background-color: lightblue;
+    margin: 20px 0;
+    padding: 20px 40px;
+    border: 2px solid navy;
+    border-radius: 8px;
+    line-height: 2;
+}
+
+.profile-list li {
+    color: navy;
+    font-weight: bold;
+}
+
+/* LINKS */
+
+.page-links {
+    margin-top: 20px;
+}
+
+.page-links a {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid navy;
+    border-radius: 5px;
+}
+
+.page-links a:hover {
+    background-color: royalblue;
+    color: white;
+    text-decoration: underline;
+}
+
+.page-links a:active {
+    background-color: yellow;
+    color: navy;
+}
+
+/* POSITION AND Z-INDEX */
+
+.profile-badge {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+    background-color: yellow;
+    color: navy;
+    padding: 8px 12px;
+    border: 2px solid navy;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* IMAGE GALLERY */
+
+.gallery-section {
+    text-align: center;
+}
+
+.gallery-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    background-color: lightblue;
+    border: 3px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-description {
+    color: navy;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 5px 5px;
+}
+
+.gallery-item:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+/* PSEUDO ELEMENTS */
+
+.gallery-title::before {
+    content: "📷 ";
+}
+
+.gallery-title::after {
+    content: " 📷";
+}
+
+.gallery-intro::first-letter {
+    color: navy;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.gallery-description::before {
+    content: "★ ";
+    color: royalblue;
+}
+
+/* FAVORITES */
 
 .favorite-list {
     line-height: 2;
@@ -301,257 +390,14 @@ button:hover {
 
 .favorite-audio {
     display: block;
+    max-width: 100%;
     margin: 20px auto;
-
     opacity: 0.9;
 }
 
 .favorite-audio:hover {
     opacity: 1;
 }
-
-
-/* ==============================
-   2.2 CSS BOX MODEL
-   ============================== */
-
-.card {
-    background-color: white;
-
-    width: 80%;
-    margin: 25px auto;
-    padding: 25px;
-
-    border: 3px solid navy;
-    border-radius: 10px;
-
-    position: relative;
-}
-
-
-/* ==============================
-   2.2 FLOAT
-   ============================== */
-
-.profile-image {
-    float: left;
-
-    width: 300px;
-    height: auto;
-
-    margin: 10px 25px 15px 0;
-    padding: 5px;
-
-    border: 3px solid navy;
-    border-radius: 10px;
-}
-
-.clear-float {
-    clear: both;
-}
-
-
-/* ==============================
-   2.2 LIST
-   ============================== */
-
-.profile-list {
-    background-color: lightblue;
-
-    margin: 20px 0;
-    padding: 20px 40px;
-
-    border: 2px solid navy;
-    border-radius: 8px;
-
-    line-height: 2;
-}
-
-.profile-list li {
-    color: navy;
-    font-weight: bold;
-}
-
-
-/* ==============================
-   2.2 LINKS
-   ============================== */
-
-.page-links {
-    margin-top: 20px;
-}
-
-.page-links a {
-    display: inline-block;
-
-    background-color: navy;
-    color: white;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    padding: 10px 15px;
-    margin: 5px;
-
-    border: 2px solid navy;
-    border-radius: 5px;
-}
-
-.page-links a:hover {
-    background-color: royalblue;
-    color: white;
-
-    text-decoration: underline;
-}
-
-
-/* ==============================
-   2.2 POSITION + Z-INDEX
-   ============================== */
-
-.profile-badge {
-    position: absolute;
-
-    top: 15px;
-    right: 20px;
-
-    z-index: 10;
-
-    background-color: yellow;
-    color: navy;
-
-    padding: 8px 12px;
-
-    border: 2px solid navy;
-    border-radius: 5px;
-
-    font-weight: bold;
-}
-
-
-/* ==========================================
-   2.3 CSS IMAGE GALLERY
-   ========================================== */
-
-.gallery-section {
-    text-align: center;
-}
-
-.gallery-intro {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    gap: 20px;
-}
-
-.gallery-item {
-    width: 250px;
-
-    background-color: lightblue;
-
-    border: 3px solid navy;
-    border-radius: 10px;
-
-    padding: 10px;
-
-    transition: 0.3s;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 8px;
-}
-
-.gallery-description {
-    color: navy;
-
-    font-weight: bold;
-    font-size: 17px;
-
-    padding: 10px 5px 5px;
-}
-
-
-/* ==========================================
-   2.3 CSS PSEUDO CLASSES
-   ========================================== */
-
-/* Hover over gallery */
-.gallery-item:hover {
-    background-color: white;
-
-    transform: scale(1.05);
-}
-
-/* Hover over gallery image */
-.gallery-item:hover img {
-    opacity: 0.8;
-}
-
-/* Hover over navigation link */
-.nav-link:hover {
-    color: yellow;
-    text-decoration: underline;
-    opacity: 0.7;
-}
-
-/* While clicking page link */
-.page-links a:active {
-    background-color: yellow;
-    color: navy;
-}
-
-/* When form input is selected */
-.form-input:focus {
-    background-color: lightyellow;
-
-    border: 2px solid royalblue;
-}
-
-
-/* ==========================================
-   2.3 CSS PSEUDO ELEMENTS
-   ========================================== */
-
-/* Adds camera before gallery title */
-.gallery-title::before {
-    content: "📷 ";
-}
-
-/* Adds camera after gallery title */
-.gallery-title::after {
-    content: " 📷";
-}
-
-/* Changes first letter */
-.gallery-intro::first-letter {
-    color: navy;
-
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* Adds star before gallery descriptions */
-.gallery-description::before {
-    content: "★ ";
-
-    color: royalblue;
-}
-
-
-/* ==========================================
-   FAVORITE COLOR IMAGE
-   ========================================== */
 
 .favorite-color-image {
     text-align: center;
@@ -562,53 +408,182 @@ button:hover {
     width: 400px;
     max-width: 90%;
     height: auto;
-
     border: 4px solid navy;
     border-radius: 10px;
-
     padding: 5px;
     background-color: white;
-
     transition: 0.3s;
 }
 
-/* Pseudo Class */
 .favorite-color-image img:hover {
     transform: scale(1.05);
     opacity: 0.85;
 }
 
+/* HOBBY VIDEO */
 
-/* ==============================
-   RESPONSIVE DESIGN
-   ============================== */
+.hobby-video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    opacity: 0.9;
+}
 
-@media screen and (max-width: 700px) {
+.hobby-video:hover {
+    opacity: 1;
+}
 
-    .card {
-        width: 85%;
+/* RESPONSIVE GOOGLE MAPS */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE LAYOUT
+   ========================================== */
+
+@media screen and (max-width: 900px) {
+
+    .image-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card,
+    #about-section,
+    #contact-section {
+        width: 90%;
+    }
+
+    table {
+        width: 95%;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE LAYOUT
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 10px;
+        line-height: 2;
+    }
+
+    .nav-link {
+        padding: 6px;
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    h1,
+    #page-title {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    h2,
+    .section-title {
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+
+    .card,
+    #about-section,
+    #contact-section {
+        width: 94%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        height: 220px;
     }
 
     .profile-image {
         float: none;
-
         display: block;
-
         width: 90%;
         max-width: 300px;
-
         margin: 10px auto 20px;
     }
 
-    .gallery-item {
-        width: 90%;
+    .profile-list {
+        padding: 15px 30px;
+    }
+
+    .profile-badge {
+        position: static;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    .page-links a {
+        padding: 8px 10px;
     }
 
     .favorite-color-image img {
         width: 90%;
     }
+}
+
+/* ==========================================
+   SMALL MOBILE RESPONSIVE LAYOUT
+   ========================================== */
+
+@media screen and (max-width: 400px) {
+
+    h1,
+    #page-title {
+        font-size: 21px;
+    }
 
     nav {
-        line-height: 2.5;
+        padding: 8px 5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .card,
+    #about-section,
+    #contact-section {
+        width: 96%;
+        padding: 12px;
+    }
+
+    .gallery-item img {
+        height: 180px;
     }
 }
